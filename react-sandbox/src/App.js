@@ -1,10 +1,11 @@
 import React from 'react'
-import Counter from './component/Counter';
+import ToDoList from './component/ToDoList';
+import './App.css'
 
 export default function App() {
   return (
     <main>
-        <Counter/>
+        <ToDoList/>
     </main>
   )
 }

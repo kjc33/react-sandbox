@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+section {
+    padding: 50px 30px;
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-list li input {
+    margin-right: 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+}
