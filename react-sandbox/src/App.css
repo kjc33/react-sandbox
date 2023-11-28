@@ -1,27 +1,105 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-h1 {
-    margin-bottom: 30px;
+.counter h1 {
+  text-align: center;
 }
 
 section {
-    padding: 50px 30px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px;
+  padding: 50px 30px;
+  margin: 0 auto;
+}
+
+.inner-container {
+    color: white;
+    background-color: dodgerblue;
+    height: 75vh;
+    width: 100%;
+}
+
+button {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border: 0;
+  background-color: white;
+  color: black;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+.x-small-gap {
+  gap: 10px;
+}
+
+.small-gap {
+  gap: 20px;
+}
+
+.medium-gap {
+  gap: 30px;
+}
+
+.large-gap {
+  gap: 50px;
+}
+
+.counter {
+  width: 100%;
+  max-width: 200px;
+}
+
+.count-num {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.increment,
+.decrement {
+  flex: 1;
 }
 
 .task-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .task-list li input {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .completed {
-    text-decoration: line-through;
+  text-decoration: line-through;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    padding: 80px 50px;
+  }
 }

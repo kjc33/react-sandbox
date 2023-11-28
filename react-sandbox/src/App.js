@@ -1,11 +1,15 @@
-import React from 'react'
-import ToDoList from './component/ToDoList';
-import './App.css'
+import React from "react";
+import List from "./component/List";
+import "./App.css";
 
 export default function App() {
   return (
     <main>
-        <ToDoList/>
+      <section>
+        <div className="inner-container flex flex-justify-center flex-align-center ">
+          <List />
+        </div>
+      </section>
     </main>
-  )
+  );
 }

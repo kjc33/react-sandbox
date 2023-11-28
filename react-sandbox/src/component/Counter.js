@@ -13,12 +13,25 @@ export default function Counter() {
     }
   };
 
+  const resetBtn = () => {
+    setCount(0);
+  };
+
   return (
-    <div className="counter">
+    <div className="counter flex flex-column small-gap">
       <h1>Counter</h1>
-      <button aria-label="Increment Counter" onClick={handleIncrement}>+</button>
-      <span>{count}</span>
-      <button aria-label="Decrement Counter" onClick={handleDecrement}>-</button>
+      <span className="count-num">{count}</span>
+      <div className="counter-controls flex small-gap">
+        <button className="increment" aria-label="Increment Counter" onClick={handleIncrement}>
+          +
+        </button>
+        <button className="decrement" aria-label="Decrement Counter" onClick={handleDecrement}>
+          -
+        </button>
+      </div>
+      <button aria-label="Reset Counter" onClick={resetBtn}>
+        Reset
+      </button>
     </div>
   );
 }
