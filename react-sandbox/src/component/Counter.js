@@ -1,3 +1,7 @@
+// Exercise 2: State and Event Handling
+// Build a Counter component that displays a count value and two buttons: one to increment the count and another to reset it. 
+// Utilize the useState hook to manage the count state.
+
 import React, { useState } from "react";
 
 export default function Counter() {
